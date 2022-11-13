@@ -1,0 +1,45 @@
+﻿@model Employee.Models.AddEmploye
+
+@{
+}
+<h1> Add employee</h1>
+<form method="post" action="Add" class="mt-5">
+  <div class="mb-3">
+    <label for="">Name</label>
+    <input type="text" class="form-control" asp-for="Name">
+  </div>
+    <div class="mb-3">
+        <label for="">age</label>
+        <input type="number" class="form-control" asp-for="age">
+    </div>
+    <div class="mb-3">
+        <label for="">jobTitle</label>
+        <input type="text" class="form-control" asp-for="jobTitle">
+    </div>
+    <div class="mb-3">
+        <label for="">start</label>
+        <input type="date" class="form-control" asp-for="start">
+    </div>
+    <div class="mb-3">
+        <label for="">end</label>
+        <input type="date" class="form-control" asp-for="end">
+    </div>
+    <div class="mb-3">
+        <label for="">previousPosition</label>
+        <input type="text" class="form-control" asp-for="previousPosition">
+    </div> 
+    <div class="mb-3">
+        <label for="">companyName</label>
+        <input type="text" class="form-control" asp-for="companyName">
+    </div>
+    <div class="mb-3">
+        <label for="">pStart</label>
+        <input type="date" class="form-control" asp-for="pStart">
+    </div>
+    <div class="mb-3">
+        <label for="">pEnd</label>
+        <input type="date" class="form-control" asp-for="pEnd">
+    </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
